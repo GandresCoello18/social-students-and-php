@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>HTML Education Template</title>
+		<title>Contacto</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
@@ -53,11 +53,11 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Courses</a></li>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Cursos</a></li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contact.html">Contacto</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
@@ -77,10 +77,10 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 text-center">
 						<ul class="hero-area-tree">
-							<li><a href="index.html">Home</a></li>
-							<li>Contact</li>
+							<li><a href="index.html">Inicio</a></li>
+							<li>Contacto</li>
 						</ul>
-						<h1 class="white-text">Get In Touch</h1>
+						<h1 class="white-text">Escribenos...</h1>
 
 					</div>
 				</div>
@@ -101,13 +101,13 @@
 					<!-- contact form -->
 					<div class="col-md-6">
 						<div class="contact-form">
-							<h4>Send A Message</h4>
+							<h4>Formulario</h4>
 							<form>
 								<input class="input" type="text" name="name" placeholder="Name">
 								<input class="input" type="email" name="email" placeholder="Email">
-								<input class="input" type="text" name="subject" placeholder="Subject">
-								<textarea class="input" name="message" placeholder="Enter your Message"></textarea>
-								<button class="main-button icon-button pull-right">Send Message</button>
+								<input class="input" type="text" name="subject" placeholder="Asunto">
+								<textarea class="input" name="message" placeholder="Comentario"></textarea>
+								<button class="main-button icon-button pull-right">Enviar</button>
 							</form>
 						</div>
 					</div>
@@ -115,11 +115,11 @@
 
 					<!-- contact information -->
 					<div class="col-md-5 col-md-offset-1">
-						<h4>Contact Information</h4>
+						<h4>Contacto - Informacion</h4>
 						<ul class="contact-details">
-							<li><i class="fa fa-envelope"></i>Educate@email.com</li>
-							<li><i class="fa fa-phone"></i>122-547-223-45</li>
-							<li><i class="fa fa-map-marker"></i>4476 Clement Street</li>
+							<li><i class="fa fa-envelope"></i>goyeselcoca@gmail.com</li>
+							<li><i class="fa fa-phone"></i>0979839846</li>
+							<li><i class="fa fa-map-marker"></i>Av Enrique Ponce Luque, Babahoyo</li>
 						</ul>
 
 						<!-- contact map -->
@@ -160,11 +160,11 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Courses</a></li>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="#">Login</a></li>
+							<li><a href="#">Cursos</a></li>
 							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="contact.html">Contacto</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->
@@ -191,7 +191,6 @@
 					<!-- copyright -->
 					<div class="col-md-8 col-md-pull-4">
 						<div class="footer-copyright">
-							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
 						</div>
 					</div>
 					<!-- /copyright -->

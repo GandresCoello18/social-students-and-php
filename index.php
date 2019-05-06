@@ -6,19 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>HTML Education Template</title>
+		<title>Social Students</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
 		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
 
 		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
 
 		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/style.css"/>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,9 +53,9 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Courses</a></li>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Cursos</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
@@ -77,9 +77,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<h1 class="white-text">Edusite Free Online Training Courses</h1>
-							<p class="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant, eu pro alii error homero.</p>
-							<a class="main-button icon-button" href="#">Get Started!</a>
+							<h1 class="white-text">Social Students</h1>
+							<p class="lead white-text">Compartir tus conocimientos con otros estudiantes es crecer profecionalmente y tu tambien puedes hacerlo.</p>
+							<a class="main-button icon-button" href="#">Empezar ahora</a>
 						</div>
 					</div>
 				</div>
@@ -99,16 +99,16 @@
 
 					<div class="col-md-6">
 						<div class="section-header">
-							<h2>Welcome to Edusite</h2>
-							<p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
+							<h2>Lo que puedes obtener</h2>
+							<p class="lead">3 elementos fundamentales.</p>
 						</div>
 
 						<!-- feature -->
 						<div class="feature">
 							<i class="feature-icon fa fa-flask"></i>
 							<div class="feature-content">
-								<h4>Online Courses </h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<h4>Cursos Tech</h4>
+								<p>Contiene una serie de tutoriales en video para la explicacion del tema.</p>
 							</div>
 						</div>
 						<!-- /feature -->
@@ -117,8 +117,8 @@
 						<div class="feature">
 							<i class="feature-icon fa fa-users"></i>
 							<div class="feature-content">
-								<h4>Expert Teachers</h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<h4>Grupos de estudiantes</h4>
+								<p>Cualquier estudiante puede compartir su conocimiento en social students.</p>
 							</div>
 						</div>
 						<!-- /feature -->
@@ -127,8 +127,8 @@
 						<div class="feature">
 							<i class="feature-icon fa fa-comments"></i>
 							<div class="feature-content">
-								<h4>Community</h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<h4>Comunidad</h4>
+								<p>Puede preguntar si tienes algun inquietud respecto a algun tema.</p>
 							</div>
 						</div>
 						<!-- /feature -->
@@ -158,8 +158,8 @@
 				<!-- row -->
 				<div class="row">
 					<div class="section-header text-center">
-						<h2>Explore Courses</h2>
-						<p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
+						<h2>Mas Recientes</h2>
+						<p class="lead">Observa los nuevos contenidos que tenemos para ti.</p>
 					</div>
 				</div>
 				<!-- /row -->
@@ -312,7 +312,7 @@
 
 				<div class="row">
 					<div class="center-btn">
-						<a class="main-button icon-button" href="#">More Courses</a>
+						<a class="main-button icon-button" href="#">Mas Cursos</a>
 					</div>
 				</div>
 
@@ -336,9 +336,9 @@
 				<div class="row">
 
 					<div class="col-md-6">
-						<h2 class="white-text">Ceteros fuisset mei no, soleat epicurei adipiscing ne vis.</h2>
-						<p class="lead white-text">Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
-						<a class="main-button icon-button" href="#">Get Started!</a>
+						<h2 class="white-text">Aprende en cualquier momento de tu dia</h2>
+						<p class="lead white-text">Conoce el contenido que ofrece las instituciones tecnologicas.</p>
+						<a class="main-button icon-button" href="#">Saber mas</a>
 					</div>
 
 				</div>
@@ -359,8 +359,8 @@
 				<!-- row -->
 				<div class="row">
 					<div class="section-header text-center">
-						<h2>Why Edusite</h2>
-						<p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
+						<h2>Lo que puedes obtener</h2>
+						<p class="lead">3 elementos fundamentales.</p>
 					</div>
 
 					<!-- feature -->
@@ -368,8 +368,8 @@
 						<div class="feature">
 							<i class="feature-icon fa fa-flask"></i>
 							<div class="feature-content">
-								<h4>Online Courses</h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<h4>Cursos Tech</h4>
+								<p>Contiene una serie de tutoriales en video para la explicacion del tema.</p>
 							</div>
 						</div>
 					</div>
@@ -380,8 +380,8 @@
 						<div class="feature">
 							<i class="feature-icon fa fa-users"></i>
 							<div class="feature-content">
-								<h4>Expert Teachers</h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<h4>Grupos de estudiantes</h4>
+								<p>Cualquier estudiante puede compartir su conocimiento en social students.</p>
 							</div>
 						</div>
 					</div>
@@ -392,8 +392,8 @@
 						<div class="feature">
 							<i class="feature-icon fa fa-comments"></i>
 							<div class="feature-content">
-								<h4>Community</h4>
-								<p>Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his suas veniam nominati.</p>
+								<h4>Comunidad</h4>
+								<p>Puede preguntar si tienes algun inquietud respecto a algun tema.</p>
 							</div>
 						</div>
 					</div>
@@ -408,9 +408,9 @@
 				<div class="row">
 
 					<div class="col-md-6">
-						<h3>Persius imperdiet incorrupte et qui, munere nusquam et nec.</h3>
-						<p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
-						<p>No vel facete sententiae, quodsi dolores no quo, pri ex tamquam interesset necessitatibus. Te denique cotidieque delicatissimi sed. Eu doming epicurei duo. Sit ea perfecto deseruisse theophrastus. At sed malis hendrerit, elitr deseruisse in sit, sit ei facilisi mediocrem.</p>
+						<h3>¿Como funciona social students?</h3>
+						<p class="lead">Compartir es el objetivo principal.</p>
+						<p>Al momento que compartes tus conocimientos se obtiene 2 valiosas cosas, 1°) El que enseña aprende dos veces. 2°) Ayudas a que otras personas a aprender. </p>
 					</div>
 
 					<div class="col-md-5 col-md-offset-1">
@@ -443,9 +443,9 @@
 				<div class="row">
 
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<h2 class="white-text">Contact Us</h2>
-						<p class="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
-						<a class="main-button icon-button" href="#">Contact Us Now</a>
+						<h2 class="white-text">Contacto</h2>
+						<p class="lead white-text">¿Tienes dudas? envia un mensaje para aclarar cualquier inquietud.</p>
+						<a class="main-button icon-button" href="#">Enviar mensaje</a>
 					</div>
 
 				</div>
@@ -479,11 +479,11 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Courses</a></li>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="#">Login</a></li>
+							<li><a href="#">Cursos</a></li>
 							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="contact.html">Contacto</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->
@@ -510,7 +510,7 @@
 					<!-- copyright -->
 					<div class="col-md-8 col-md-pull-4">
 						<div class="footer-copyright">
-							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
+
 						</div>
 					</div>
 					<!-- /copyright -->

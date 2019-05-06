@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>HTML Education Template</title>
+		<title>Blog</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
@@ -53,11 +53,11 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Courses</a></li>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Cursos</a></li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contact.html">Contacto</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
@@ -77,10 +77,10 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 text-center">
 						<ul class="hero-area-tree">
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Inicio</a></li>
 							<li>Blog</li>
 						</ul>
-						<h1 class="white-text">Blog Page</h1>
+						<h1 class="white-text">Nuestros Post</h1>
 
 					</div>
 				</div>
@@ -224,7 +224,7 @@
 
 						<!-- category widget -->
 						<div class="widget category-widget">
-							<h3>Categories</h3>
+							<h3>Categorias</h3>
 							<a class="category" href="#">Web <span>12</span></a>
 							<a class="category" href="#">Css <span>5</span></a>
 							<a class="category" href="#">Wordpress <span>24</span></a>
@@ -235,7 +235,7 @@
 
 						<!-- posts widget -->
 						<div class="widget posts-widget">
-							<h3>Recents Posts</h3>
+							<h3>Pots Recientes</h3>
 
 							<!-- single posts -->
 							<div class="single-post">
