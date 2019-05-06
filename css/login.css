@@ -1,0 +1,30 @@
+
+form{
+    position: relative;
+    margin: auto;
+    width: 400px;
+    top: 250px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+input{
+    margin-top: 10px;
+}
+.acceder{
+    background-color: #FF6700;
+    color: #fff;
+    border-radius: 13px;
+}
+#crear{
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+#login{
+    display: block;
+}
+#registro{
+    display: none;
+}
