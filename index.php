@@ -15,7 +15,7 @@
 						<div class="col-md-8">
 							<h1 class="white-text">Social Students</h1>
 							<p class="lead white-text">Compartir tus conocimientos con otros estudiantes es crecer profecionalmente y tu tambien puedes hacerlo.</p>
-							<a class="main-button icon-button" href="#">Empezar ahora</a>
+							<a class="main-button icon-button" href="login.php">Empezar ahora</a>
 						</div>
 					</div>
 				</div>
@@ -274,7 +274,7 @@
 					<div class="col-md-6">
 						<h2 class="white-text">Aprende en cualquier momento de tu dia</h2>
 						<p class="lead white-text">Conoce el contenido que ofrece las instituciones tecnologicas.</p>
-						<a class="main-button icon-button" href="#">Saber mas</a>
+						<a class="main-button icon-button" href="cursos.php">Saber mas</a>
 					</div>
 
 				</div>
@@ -381,7 +381,7 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<h2 class="white-text">Contacto</h2>
 						<p class="lead white-text">¿Tienes dudas? envia un mensaje para aclarar cualquier inquietud.</p>
-						<a class="main-button icon-button" href="#">Enviar mensaje</a>
+						<a class="main-button icon-button" href="contact.php">Enviar mensaje</a>
 					</div>
 
 				</div>
@@ -394,81 +394,6 @@
 		<!-- /Contact CTA -->
 
 		<!-- Footer -->
-		<footer id="footer" class="section">
-
-			<!-- container -->
-			<div class="container">
-
-				<!-- row -->
-				<div class="row">
-
-					<!-- footer logo -->
-					<div class="col-md-6">
-						<div class="footer-logo">
-							<a class="logo" href="index.html">
-								<img src="./img/logo.png" alt="logo">
-							</a>
-						</div>
-					</div>
-					<!-- footer logo -->
-
-					<!-- footer nav -->
-					<div class="col-md-6">
-						<ul class="footer-nav">
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="#">Login</a></li>
-							<li><a href="#">Cursos</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contacto</a></li>
-						</ul>
-					</div>
-					<!-- /footer nav -->
-
-				</div>
-				<!-- /row -->
-
-				<!-- row -->
-				<div id="bottom-footer" class="row">
-
-					<!-- social -->
-					<div class="col-md-4 col-md-push-8">
-						<ul class="footer-social">
-							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
-							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<!-- /social -->
-
-					<!-- copyright -->
-					<div class="col-md-8 col-md-pull-4">
-						<div class="footer-copyright">
-
-						</div>
-					</div>
-					<!-- /copyright -->
-
-				</div>
-				<!-- row -->
-
-			</div>
-			<!-- /container -->
-
-		</footer>
-		<!-- /Footer -->
-
-		<!-- preloader -->
-		<div id='preloader'><div class='preloader'></div></div>
-		<!-- /preloader -->
-
-
-		<!-- jQuery Plugins -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-
-	</body>
-</html>
+<?php
+	include_once('includes/footer.php');
+?>

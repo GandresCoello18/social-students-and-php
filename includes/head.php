@@ -13,22 +13,13 @@
 
 		<!-- Bootstrap -->
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="font/flaticon.css"/>
 
 		<!-- Font Awesome Icon -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
-		<link type="text/css" rel="stylesheet" href="css/login.css"/>
-
-
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
     </head>
 	<body>
 
@@ -57,12 +48,11 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="index.php">Inicio</a></li>
 						<li><a href="login.php">Login</a></li>
-						<li><a href="#">Cursos</a></li>
+						<li><a href="cursos.php">Cursos</a></li>
 						<li><a href="blog.php">Blog</a></li>
 						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
-
 			</div>
 		</header>
