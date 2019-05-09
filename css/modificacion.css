@@ -1,0 +1,54 @@
+#login:before{
+    content: '\f178';
+    color: #FF6700;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+    font-family: 'flaticon';
+    font-weight: bold;
+}
+
+#inicio:before{
+    content: '\f132';
+    color: #FF6700;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+    font-family: 'flaticon';
+    font-weight: bold;
+}
+
+#cursos:before{
+    content: '\f179';
+    color: #FF6700;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+    font-family: 'flaticon';
+    font-weight: bold;
+}
+
+#blog:before{
+    content: '\f128';
+    color: #FF6700;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+    font-family: 'flaticon';
+    font-weight: bold;
+}
+
+#contact:before{
+    content: '\f11e';
+    color: #FF6700;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+    font-family: 'flaticon';
+    font-weight: bold;
+}
