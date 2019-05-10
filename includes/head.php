@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Social Students</title>
+		<title><?php echo $title; ?></title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
@@ -47,11 +47,17 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.php" id="inicio">Inicio</a></li>
-						<li><a href="login.php" id="login">Login</a></li>
-						<li><a href="cursos.php" id="cursos">Cursos</a></li>
-						<li><a href="blog.php" id="blog">Blog</a></li>
-						<li><a href="contact.php" id="contact">Contact</a></li>
+						<li><a href="index.php" id="nav-inicio">Inicio</a></li>
+						<?php 
+							if($title === 'Andres coello goyes'){
+								echo "<li><a href='cerrar.php' id='nav-login'>Cerar session</a></li>";
+							}else{
+								echo "<li><a href='login.php' id='nav-login'>Login</a></li>";
+							}
+						?>
+						<li><a href="cursos.php" id="nav-cursos">Cursos</a></li>
+						<li><a href="blog.php" id="nav-blog">Blog</a></li>
+						<li><a href="contact.php" id="nav-contact">Contact</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->

@@ -1,4 +1,4 @@
-#login:before{
+#nav-login:before{
     content: '\f178';
     color: #FF6700;
     width: 20px;
@@ -9,7 +9,7 @@
     font-weight: bold;
 }
 
-#inicio:before{
+#nav-inicio:before{
     content: '\f132';
     color: #FF6700;
     width: 20px;
@@ -20,7 +20,7 @@
     font-weight: bold;
 }
 
-#cursos:before{
+#nav-cursos:before{
     content: '\f179';
     color: #FF6700;
     width: 20px;
@@ -31,7 +31,7 @@
     font-weight: bold;
 }
 
-#blog:before{
+#nav-blog:before{
     content: '\f128';
     color: #FF6700;
     width: 20px;
@@ -42,7 +42,7 @@
     font-weight: bold;
 }
 
-#contact:before{
+#nav-contact:before{
     content: '\f11e';
     color: #FF6700;
     width: 20px;
@@ -51,4 +51,32 @@
     left: -10px;
     font-family: 'flaticon';
     font-weight: bold;
+}
+#video{
+    position: relative;
+    width: 99%;
+    height: 400px;    
+}
+.alert{
+    position: relative;
+    margin-bottom: -5px; 
+    font-weight: bold;
+}
+#video-e-seccion{
+    position: relative;
+    top: 30px;
+}
+
+@media screen and (min-width: 544px){
+
+}
+@media screen and (min-width: 768px){
+    #nav-login:before{display: none;} #nav-inicio:before{display: none;} #nav-cursos:before{display:  none;}
+    #nav-blog:before{display:  none;} #nav-contact:before{display: none;}
+}
+@media screen and (min-width: 992px){
+	
+}
+@media screen and (min-width: 1200px){
+	
 }

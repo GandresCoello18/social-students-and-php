@@ -20,7 +20,13 @@
 					<div class="col-md-6">
 						<ul class="footer-nav">
 							<li><a href="index.php">Inicio</a></li>
-							<li><a href="login.php">Login</a></li>
+							<?php 
+							if($title === 'Andres coello goyes'){
+								echo "<li><a href='cerrar.php'>Cerar session</a></li>";
+							}else{
+								echo "<li><a href='login.php'>Login</a></li>";
+							}
+						?>
 							<li><a href="cursos.php">Cursos</a></li>
 							<li><a href="blog.php">Blog</a></li>
 							<li><a href="contact.php">Contacto</a></li>
@@ -37,10 +43,9 @@
 					<!-- social -->
 					<div class="col-md-4 col-md-push-8">
 						<ul class="footer-social">
-							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+							<li><a href="https://www.facebook.com/andres.coellogoyes" target="_blanck" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/coellogoyes/" target="_blanck" class="instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCHWsGkCRqlNKnoxYkC_ZRxQ?view_as=subscriber" target="_blanck" class="youtube"><i class="fa fa-youtube"></i></a></li>
 						</ul>
 					</div>
 					<!-- /social -->

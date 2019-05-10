@@ -1,4 +1,5 @@
 <?php
+	$title = 'Blog';
 	require_once('includes/head.php');
 ?>
 		<!-- Hero-area -->

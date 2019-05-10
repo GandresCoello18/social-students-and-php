@@ -1,4 +1,5 @@
 <?php
+	$title = 'Cursos';
     include_once('includes/head.php');
 ?>
 <div class="hero-area section">
@@ -11,7 +12,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1 text-center">
 			<ul class="hero-area-tree">
-				<li><a href="index.php">Home</a></li>
+				<li><a href="index.php">Inicio</a></li>
 				<li><a href="cursos.php">Cursos</a></li>
 			</ul>
 		</div>

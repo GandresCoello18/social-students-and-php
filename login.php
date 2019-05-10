@@ -1,4 +1,5 @@
 <?php
+    $title = 'Login / Registrate';
     require_once('includes/head.php');
 ?>
 
@@ -44,7 +45,7 @@ input{
         <div class="col-5">
             <form id="login">
                 <h3 class="text-center">Social Students</h3>
-                <input type="email" id="email" class="form-control text-center" require placeholder="Correo Electronico">
+                <input type="email" class="form-control text-center" require placeholder="Correo Electronico">
                 <input type="password" class="form-control text-center" placeholder="Contraseña">
                 <input type="button" class="form-control btn acceder" value="Acceder">
                 <p id="crear" onclick="crear_cuenta()">Crear una cuenta S-S...!</p>
@@ -52,7 +53,7 @@ input{
 
             <form id="registro">
                 <h3 class="text-center">Social Students</h3>
-                <input type="email" class="form-control text-center email" require placeholder="Correo Electronico">
+                <input type="email" class="form-control text-center" require placeholder="Correo Electronico">
                 <input type="password" class="form-control text-center" placeholder="Contraseña Minimo 7 caracter">
                 <input type="password" class="form-control text-center" placeholder="Confirma Contraseña">
                 <input type="button" class="form-control btn acceder" value="Registrarse">

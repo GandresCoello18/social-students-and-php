@@ -1,4 +1,5 @@
 <?php
+	$title = 'Social Students';
 	require_once('includes/head.php');
 ?>
 
@@ -103,7 +104,7 @@
 				<!-- courses -->
 				<div class="row">
 					<div class="center-btn">
-						<a class="main-button icon-button" href="#">Mas Cursos</a>
+						<a class="main-button icon-button" href="cursos.php">Mas Cursos</a>
 					</div>
 				</div>
 
