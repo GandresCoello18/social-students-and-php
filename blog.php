@@ -1,6 +1,9 @@
 <?php
 	$title = 'Blog';
 	require_once('includes/head.php');
+	require_once('codigo_fuente/blog.php');
+	$objeto = new Blog();
+	$objeto::post_article($conexion);
 ?>
 		<!-- Hero-area -->
 		<div class="hero-area section">

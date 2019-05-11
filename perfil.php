@@ -18,6 +18,7 @@ include_once('includes/head.php'); ?>
 					</div>
 				</div>
 			</div>
-		</div>
+        </div>
+
 <?php include_once('includes/cursos.php');
 include_once('includes/footer.php'); ?>

@@ -1,3 +1,4 @@
+<?php require_once('codigo_fuente/conexion.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>

@@ -1,6 +1,11 @@
 <?php
 	$title = 'Social Students';
 	require_once('includes/head.php');
+	$num_curso = 4;
+	require_once('codigo_fuente/cursos.php');
+	
+$objeto = new Cursos();
+$resul = $objeto::abstraer_cursos($num_curso, $conexion);
 ?>
 
 		<!-- Home -->
