@@ -3,7 +3,7 @@
 	require_once('includes/head.php');
 	require_once('codigo_fuente/blog.php');
 	$objeto = new Blog();
-	$objeto::post_article($conexion);
+	$post = $objeto::post_article($conexion);
 ?>
 		<!-- Hero-area -->
 		<div class="hero-area section">
@@ -16,7 +16,7 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 text-center">
 						<ul class="hero-area-tree">
-							<li><a href="index.html">Inicio</a></li>
+							<li><a href="index.php">Inicio</a></li>
 							<li>Blog</li>
 						</ul>
 						<h1 class="white-text">Nuestros Post</h1>
@@ -44,85 +44,26 @@
 						<div class="row">
 
 							<!-- single blog -->
+							<?php foreach($post as $valor) : ?>
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="blog-post.html">
-											<img src="./img/blog01.jpg" alt="">
+										<a href="articulos/<?php echo $valor['url']; ?>">
+											<img src="./img/<?php echo $valor['imagen']; ?>" alt="">
 										</a>
 									</div>
-									<h4><a href="blog-post.html">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
+									<h4><a href="articulos/<?php echo $valor['url']; ?>"><?php echo $valor['titulo']; ?></a></h4>
 									<div class="blog-meta">
 										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
 										<div class="pull-right">
-											<span>18 Oct, 2017</span>
-											<span class="blog-meta-comments"><a href="#"><i class="fa fa-comments"></i> 35</a></span>
+											<span><?php echo $valor['fecha']; ?></span>
+											<span class="blog-meta-comments"><a href="articulos/<?php echo $valor['url']; ?>"><i class="fa fa-comments"></i><?php echo $valor['comentario']; ?></a></span>
 										</div>
 									</div>
 								</div>
 							</div>
+							<?php endforeach; ?>
 							<!-- /single blog -->
-
-							<!-- single blog -->
-							<div class="col-md-6">
-								<div class="single-blog">
-									<div class="blog-img">
-										<a href="blog-post.php">
-											<img src="./img/blog02.jpg" alt="">
-										</a>
-									</div>
-									<h4><a href="blog-post.php">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
-									<div class="blog-meta">
-										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
-										<div class="pull-right">
-											<span>18 Oct, 2017</span>
-											<span class="blog-meta-comments"><a href="#"><i class="fa fa-comments"></i> 35</a></span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- /single blog -->
-
-							<!-- single blog -->
-							<div class="col-md-6">
-								<div class="single-blog">
-									<div class="blog-img">
-										<a href="blog-post.phpl">
-											<img src="./img/blog03.jpg" alt="">
-										</a>
-									</div>
-									<h4><a href="blog-post.php">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
-									<div class="blog-meta">
-										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
-										<div class="pull-right">
-											<span>18 Oct, 2017</span>
-											<span class="blog-meta-comments"><a href="#"><i class="fa fa-comments"></i> 35</a></span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- /single blog -->
-
-							<!-- single blog -->
-							<div class="col-md-6">
-								<div class="single-blog">
-									<div class="blog-img">
-										<a href="blog-post.php">
-											<img src="./img/blog04.jpg" alt="">
-										</a>
-									</div>
-									<h4><a href="blog-post.php">Pro eu error molestie deserunt. At per viderer bonorum persecuti.</a></h4>
-									<div class="blog-meta">
-										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
-										<div class="pull-right">
-											<span>18 Oct, 2017</span>
-											<span class="blog-meta-comments"><a href="#"><i class="fa fa-comments"></i> 35</a></span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- /single blog -->
-
 						</div>
 						<!-- /row -->
 

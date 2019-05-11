@@ -1,5 +1,5 @@
 <?php
-		require_once('codigo_fuente/conexion.php');
+		require_once('../codigo_fuente/conexion.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,15 +15,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
 		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
-		<link type="text/css" rel="stylesheet" href="font/flaticon.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="../font/flaticon.css"/>
 
 		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
 
 		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="css/style.css"/>
-		<link type="text/css" rel="stylesheet" href="css/modificacion.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/modificacion.css"/>
     </head>
 	<body>
 
@@ -34,8 +34,8 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="index.php">
-							<img src="./img/logo-alt.png" alt="logo">
+						<a class="logo" href="../index.php">
+							<img src="../img/logo-alt.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -50,17 +50,17 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.php" id="nav-inicio">Inicio</a></li>
+						<li><a href="../index.php" id="nav-inicio">Inicio</a></li>
 						<?php 
 							if($title === 'Andres coello goyes'){
-								echo "<li><a href='cerrar.php' id='nav-login'>Cerar session</a></li>";
+								echo "<li><a href='../cerrar.php' id='nav-login'>Cerar session</a></li>";
 							}else{
-								echo "<li><a href='login.php' id='nav-login'>Login</a></li>";
+								echo "<li><a href='../login.php' id='nav-login'>Login</a></li>";
 							}
 						?>
-						<li><a href="cursos.php" id="nav-cursos">Cursos</a></li>
-						<li><a href="blog.php" id="nav-blog">Blog</a></li>
-						<li><a href="contact.php" id="nav-contact">Contact</a></li>
+						<li><a href="../cursos.php" id="nav-cursos">Cursos</a></li>
+						<li><a href="../blog.php" id="nav-blog">Blog</a></li>
+						<li><a href="../contact.php" id="nav-contact">Contact</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
