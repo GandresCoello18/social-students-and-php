@@ -1,5 +1,9 @@
 <?php
 		require_once('codigo_fuente/conexion.php');
+		if(!empty($_SESSION['cuenta_personal'])){
+			$cuenta_personal_2 = $_SESSION['cuenta_personal'];
+			require_once('codigo_fuente/head.php');
+		}
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,9 +38,19 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="index.php">
-							<img src="./img/logo-alt.png" alt="logo">
-						</a>
+						<?php 
+							if(!empty($_SESSION['cuenta_personal'])){
+								$consulta_Avatar = $consulta['avatar'];
+								echo 	"<a class='logo' href='perfil.php'>
+												<img src='./img/$consulta_Avatar' alt='logo' style='border-radius: 50%;'>
+											</a>";
+							}else{
+								$_SESSION['cuenta_personal'] = null;
+								echo 	"<a class='logo' href='index.php'>
+												<img src='./img/logo-alt.png' alt='logo'>
+											</a>";
+							}
+						?>
 					</div>
 					<!-- /Logo -->
 
@@ -52,9 +66,10 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="index.php" id="nav-inicio">Inicio</a></li>
 						<?php 
-							if($title === 'Andres coello goyes'){
+							if(!empty($_SESSION['cuenta_personal'])){
 								echo "<li><a href='cerrar.php' id='nav-login'>Cerar session</a></li>";
 							}else{
+								$_SESSION['cuenta_personal'] = null;
 								echo "<li><a href='login.php' id='nav-login'>Login</a></li>";
 							}
 						?>

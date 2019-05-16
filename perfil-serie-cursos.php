@@ -1,5 +1,21 @@
-<?php $title = 'Andres coello goyes';
-include_once('includes/head.php'); ?>
+<?php
+include_once('codigo_fuente/sesion.php');
+ $tema=($_GET['tema']);
+if(empty($_GET['video'])){
+    $video = null;
+}else{
+    $video=($_GET['video']);
+}
+if(!empty($_SESSION['cuenta_personal'])){
+    $cuenta_personal = $_SESSION['cuenta_personal'];
+    include_once('codigo_fuente/perfil-serie-cursos.php');
+    $title = $consulta[1];
+}else{
+    $title = "Usuario no Registrado";
+    if($video) header('location: login.php');
+}
+include_once('includes/head.php');
+include_once('codigo_fuente/serie-cursos-DB.php'); ?>
         <div class="hero-area section">
 
 			<!-- Backgound Image -->
@@ -14,7 +30,11 @@ include_once('includes/head.php'); ?>
 							<li><a href="perfil.php">Perfil</a></li>
 							<li>Compartir es el objetivo</li>
 						</ul>
-						<h1 class="white-text">Andres Coello Goyes</h1>
+                        <?php if(!empty($_SESSION['cuenta_personal'])) : ?>
+                            <h1 class='white-text'><?php echo $consulta[1]; ?></h1>
+                        <?php else: ?>
+                            <h1 class='white-text'>Usuario no registrado</h1>
+                        <?php endif; ?>       
 					</div>
 				</div>
 			</div>
@@ -28,14 +48,9 @@ include_once('includes/head.php'); ?>
         </div>
         <div class="col-12 col-md-4">
             <div class="row ">
-                <div class="col-12 alert alert-success">Intrduccion al desarrollo con JAVA ---- 12 min</div>
-                <div class="col-12 alert alert-danger">Entorno de trabajo ---- 5 min</div>
-                <div class="col-12 alert alert-danger">Variables locales / Globales ---- 7 min</div>
-                <div class="col-12 alert alert-danger">operadores logicos / Aritmeticos ---- 5 min</div>
-                <div class="col-12 alert alert-danger">condiciones o desiciones ---- 6 min</div>
-                <div class="col-12 alert alert-danger">Ciclos o Bucles repetitivos ---- 5 min</div>
-                <div class="col-12 alert alert-danger">Funciones o bloques de codigo ---- 8 min</div>
-                <div class="col-12 alert alert-danger">Mini proyecto "pelea virtual" ---- 6 min</div>
+            <?php foreach($consulta_item_cursos as $valor) : ?>
+                <div class="col-12 alert <?php echo $valor['alert']; ?>"><a href="?tema=<?php echo $tema; ?>&video=<?php echo $valor['id_serie']; ?>"><?php echo $valor['item_video']; ?></a> ---- <?php echo $valor['minutos']; ?> min</div>
+            <?php endforeach; ?>
             </div>
         </div>    
     </div>

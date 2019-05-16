@@ -1,4 +1,5 @@
 <?php
+	require_once('codigo_fuente/sesion.php');
 	$title = 'Blog';
 	require_once('includes/head.php');
 	require_once('codigo_fuente/blog.php');

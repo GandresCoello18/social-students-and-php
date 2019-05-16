@@ -1,5 +1,11 @@
-<?php $title = 'Andres coello goyes';
-include_once('includes/head.php'); ?>
+<?php 
+	include_once('codigo_fuente/sesion.php');
+	$cuenta_personal = $_SESSION['cuenta_personal'];
+	include_once('codigo_fuente/conexion.php');
+	include_once('codigo_fuente/perfil.php');
+	$title = $abstraer_info[0]['usuario'];
+	include_once('includes/head.php');
+?>
         <div class="hero-area section">
 
 			<!-- Backgound Image -->
@@ -14,7 +20,7 @@ include_once('includes/head.php'); ?>
 							<li><a href="perfil.php">Perfil</a></li>
 							<li>Compartir es el objetivo</li>
 						</ul>
-						<h1 class="white-text">Andres Coello Goyes</h1>
+						<h1 class="white-text"><?php echo $abstraer_info[0]['usuario']; ?></h1>
 					</div>
 				</div>
 			</div>

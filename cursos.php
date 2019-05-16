@@ -1,4 +1,5 @@
 <?php
+require_once('codigo_fuente/sesion.php');
 	$title = 'Cursos';
     include_once('includes/head.php');
 ?>

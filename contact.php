@@ -1,4 +1,5 @@
 <?php
+	include_once('codigo_fuente/sesion.php');
 	$title = 'Contacto';
 	require_once('includes/head.php');
 

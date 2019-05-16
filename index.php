@@ -1,4 +1,5 @@
 <?php
+	include_once('codigo_fuente/sesion.php');
 	$title = 'Social Students';
 	require_once('includes/head.php');
 	$num_curso = 4;

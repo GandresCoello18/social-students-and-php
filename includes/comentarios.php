@@ -4,7 +4,7 @@
 							<!-- single comment -->
 							<div class="media">
 								<div class="media-left">
-									<img src="./img/avatar.png" alt="">
+									<img src="./img/avatar.jpg" alt="">
 								</div>
 								<div class="media-body">
 									<h4 class="media-heading">John Doe</h4>
@@ -15,7 +15,7 @@
 								<!-- comment reply -->
 								<div class="media">
 									<div class="media-left">
-										<img src="./img/avatar.png" alt="">
+										<img src="./img/avatar-2.jpg" alt="">
 									</div>
 									<div class="media-body">
 										<h4 class="media-heading">John Doe</h4>
@@ -28,7 +28,7 @@
 								<!-- comment reply -->
 								<div class="media">
 									<div class="media-left">
-										<img src="./img/avatar.png" alt="">
+										<img src="./img/avatar-3.jpg" alt="">
 									</div>
 									<div class="media-body">
 										<h4 class="media-heading">John Doe</h4>
@@ -44,7 +44,7 @@
 							<!-- single comment -->
 							<div class="media">
 								<div class="media-left">
-									<img src="./img/avatar.png" alt="">
+									<img src="./img/avatar-4.jpg" alt="">
 								</div>
 								<div class="media-body">
 									<h4 class="media-heading">John Doe</h4>

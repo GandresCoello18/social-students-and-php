@@ -1,4 +1,5 @@
 <?php
+	require_once('../codigo_fuente/sesion.php');
 	$title = 'Bits - Bytes';
 	require_once('includes/head_post.php');
 ?>

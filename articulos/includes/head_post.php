@@ -52,9 +52,10 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="../index.php" id="nav-inicio">Inicio</a></li>
 						<?php 
-							if($title === 'Andres coello goyes'){
+							if($_SESSION['cuenta_personal']){
 								echo "<li><a href='../cerrar.php' id='nav-login'>Cerar session</a></li>";
 							}else{
+								$_SESSION['cuenta_personal'] = null;
 								echo "<li><a href='../login.php' id='nav-login'>Login</a></li>";
 							}
 						?>
