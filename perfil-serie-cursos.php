@@ -58,7 +58,11 @@ include_once('codigo_fuente/serie-cursos-DB.php'); ?>
     <div class="row">
         <div class="col-12">
         				<!-- /blog comments -->
-					<?php require_once('includes/comentarios.php'); ?>
+                    <?php
+                        if(!empty($video)){
+                            require_once('includes/comentarios.php');
+                        }
+                    ?>
         </div>
     </div>
 <section>

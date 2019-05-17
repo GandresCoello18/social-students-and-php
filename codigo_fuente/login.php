@@ -14,12 +14,14 @@
                     ':correo' => $this->correo
                 ));
                 $consulta = $consulta->fetchall();
-                 if(password_verify($this->contra_log, $consulta[0]['contrasena'])){
+                 if(password_verify($this->contra_log, $consulta[0]['contrasena']) == 0){
+                    header('location: login.php');
+                 }else if(password_verify($this->contra_log, $consulta[0]['contrasena']) > 0){
                     $_SESSION['cuenta_personal'] = $consulta[0][0];
                     header('location: perfil.php');
                  }else{
                     return "Datos incorrectos, vuelva a intentarlo";
-                 }
+                }
             }
         }
 
