@@ -1,10 +1,12 @@
 <?php
 	require_once('codigo_fuente/sesion.php');
+	if(empty($_GET['pagina'])) $_GET['pagina'] = 1;
 	$title = 'Blog';
 	require_once('includes/head.php');
 	require_once('codigo_fuente/blog.php');
 	$objeto = new Blog();
-	$post = $objeto::post_article($conexion);
+	$post = $objeto->post_article($conexion);
+	$boton_pagina = $objeto->paginacion($conexion);
 ?>
 		<!-- Hero-area -->
 		<div class="hero-area section">
@@ -49,16 +51,16 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="articulos/<?php echo $valor['url']; ?>">
+										<a href="articulos/<?php echo $valor['url']; ?>?user=<?php echo $valor['titulo']; ?>">
 											<img src="./img/<?php echo $valor['imagen']; ?>" alt="">
 										</a>
 									</div>
 									<h4><a href="articulos/<?php echo $valor['url']; ?>"><?php echo $valor['titulo']; ?></a></h4>
 									<div class="blog-meta">
-										<span class="blog-meta-author">By: <a href="#">John Doe</a></span>
+										<span class="blog-meta-author">De: <a href="#"><?php echo $valor['usuario']; ?></a></span>
 										<div class="pull-right">
 											<span><?php echo $valor['fecha']; ?></span>
-											<span class="blog-meta-comments"><a href="articulos/<?php echo $valor['url']; ?>"><i class="fa fa-comments"></i><?php echo $valor['comentario']; ?></a></span>
+											<span class="blog-meta-comments"><a href="articulos/<?php echo $valor['url']; ?>"><i class="fa fa-comments"></i><?php //echo $valor['comentario']; ?></a></span>
 										</div>
 									</div>
 								</div>
@@ -74,14 +76,24 @@
 							<!-- pagination -->
 							<div class="col-md-12">
 								<div class="post-pagination">
-									<a href="#" class="pagination-back pull-left">Back</a>
+								<?php $anterior = $_GET['pagina'] - 1;
+									 	echo "<a href='?pagina=$anterior' class='pagination-back pull-left'>Back</a>"; 
+									?>
 									<ul class="pages">
-										<li class="active">1</li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#">4</a></li>
+										<?php
+											for($i = 1; $i<=$boton_pagina; $i++){
+												if($_GET['pagina'] == $i){
+													echo "<li class='active'><a style='color:#fff' href='?pagina=$i'>$i</a></li>";
+												}else{
+													echo "<li><a href='?pagina=$i'>$i</a></li>";
+												}
+											}
+										?>
 									</ul>
-									<a href="#" class="pagination-next pull-right">Next</a>
+									<?php $siguiente = $_GET['pagina'] + 1;
+										if($siguiente > $boton_pagina) $siguiente = 1;
+									 	echo "<a href='?pagina=$siguiente' class='pagination-next pull-right'>Next</a>"; 
+									?>
 								</div>
 							</div>
 							<!-- pagination -->

@@ -45,6 +45,16 @@ include_once('codigo_fuente/serie-cursos-DB.php'); ?>
         <div class="col-12 col-md-7">
         <iframe id="video" src="https://www.youtube.com/embed/1TXJZgZs1wQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p></p>
+                <div class="row">
+                    <div class="col-12">
+        				<!-- /blog comments -->
+                        <?php
+                            if(!empty($video)){
+                                require_once('includes/comentarios.php');
+                            }
+                        ?>
+                    </div>
+                </div>
         </div>
         <div class="col-12 col-md-4">
             <div class="row ">
@@ -53,17 +63,6 @@ include_once('codigo_fuente/serie-cursos-DB.php'); ?>
             <?php endforeach; ?>
             </div>
         </div>    
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-        				<!-- /blog comments -->
-                    <?php
-                        if(!empty($video)){
-                            require_once('includes/comentarios.php');
-                        }
-                    ?>
-        </div>
     </div>
 <section>
 

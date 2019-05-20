@@ -12,12 +12,29 @@
 			data: datos,
 			success:function(datos){
 				$("#inyect").html(datos);
+				if(comentario != ''){
+					document.getElementById("form_coment").reset();
+				}
 			}
 		})
 	}
+///////////////////////
+	setInterval( () => {
+		var id_text = document.getElementById('id_text').value;
+		var dates = 'id_item_video='+id_text;
+		$.ajax({
+			type: "POST",
+			url: "time_real.php?",
+			data: dates,
+			success:function(res){
+				$("#inyect").html(res);
+			}
+		})
+	},1000);
+
 </script>
 						<div class="blog-comments" style="margin: 10px;">
-							<h3>5 Comentarios</h3>
+							<h3>Comentarios</h3>
 
 							<!-- single comment -->
 							<div class="media">
@@ -27,7 +44,7 @@
 							</div>
 							<!-- blog reply form -->
 							<div class="blog-reply-form col-6">
-								<h3>Comentarios</h3>
+								<!--<h3>Comentarios</h3>-->
 								<form id="form_coment" method="post">
 									<input type="text" id="id_text" name="id_item_video" value="<?php echo $video; ?>" style="display: none;">
 									<textarea class="input" id="comentario" name="message" placeholder="Describe tus ideas..." style="border: 1px solid #FF6700"></textarea>

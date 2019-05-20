@@ -21,9 +21,10 @@
 						<ul class="footer-nav">
 							<li><a href="index.php">Inicio</a></li>
 							<?php 
-							if($title === 'Andres coello goyes'){
+							if(!empty($_SESSION['cuenta_personal'])){
 								echo "<li><a href='cerrar.php'>Cerar session</a></li>";
 							}else{
+								$_SESSION['cuenta_personal'] = null;
 								echo "<li><a href='login.php'>Login</a></li>";
 							}
 						?>

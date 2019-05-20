@@ -1,35 +1,9 @@
 <?php
-	$title = 'Importacia de Linux';
-	require_once('includes/head_post.php');
+	require_once('includes/code_min_post.php');
 ?>
 		<!-- /Header -->
 
 		<!-- Hero-area -->
-		<div class="hero-area section">
-
-			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(../img/blog-post-background.jpg)"></div>
-			<!-- /Backgound Image -->
-
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 text-center">
-						<ul class="hero-area-tree">
-							<li><a href="index.php">Inicio</a></li>
-							<li><a href="blog.php">Blog</a></li>
-							<li>Compartir es el Objetivo</li>
-						</ul>
-						<h1 class="white-text">La importancia de utilizar Linux</h1>
-						<ul class="blog-post-meta">
-							<li class="blog-meta-author">De : <a href="#">John Doe</a></li>
-							<li>18 Oct, 2017</li>
-							<li class="blog-meta-comments"><a href="#"><i class="fa fa-comments"></i> 35</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-		</div>
 		<!-- /Hero-area -->
 
 		<!-- Blog -->
