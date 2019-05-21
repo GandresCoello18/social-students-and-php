@@ -1,6 +1,6 @@
 <?php 
 require_once('codigo_fuente/cursos.php');
-		if($title == 'social students'){
+		if($title == 'Social Students'){
 			$objeto = new Cursos();
 			$resul = $objeto::abstraer_cursos(4,$conexion);
 		}else{

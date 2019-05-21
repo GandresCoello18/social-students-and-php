@@ -2,7 +2,7 @@
 
 						<!-- search widget -->
 						<div class="widget search-widget">
-							<form>
+							<form action="../buscar.php" method="get">
 								<input class="input" type="text" name="search">
 								<button><i class="fa fa-search"></i></button>
 							</form>

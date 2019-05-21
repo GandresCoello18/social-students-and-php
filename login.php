@@ -9,14 +9,14 @@
         $_SESSION['cuenta_personal'] = null;
     }
     if(isset($_POST['accede_log'])){
-        $correo = $_POST['correo_log'];
+        $correo = filter_var($_POST['correo_log'], FILTER_SANITIZE_STRING);
         $contra_log = $_POST['contra_log'];
         $objeto = new Login($correo, $contra_log);    
         $error_vacio = $objeto->validar($conexion);
     }
     if(isset($_POST['registrate'])){
-        $correo_reg = $_POST['correo_reg'];
-        $usuario_reg = $_POST['usuario_reg'];
+        $correo_reg = filter_var($_POST['correo_reg'], FILTER_SANITIZE_STRING);
+        $usuario_reg = filter_var($_POST['usuario_reg'], FILTER_SANITIZE_STRING);
         $contra_reg = $_POST['contra_reg']; 
         $contra_2_reg = $_POST['contra_2_reg'];
         $sexo = $_POST['sexo'];

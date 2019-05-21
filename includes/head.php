@@ -29,6 +29,30 @@
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 		<link type="text/css" rel="stylesheet" href="css/modificacion.css"/>
     </head>
+		<style>
+		input[type=”file”]#nuestroinput {
+ 			width: 0.1px;
+ 			height: 0.1px;
+ 			opacity: 0;
+ 			overflow: hidden;
+ 			position: absolute;
+ 			z-index: -1;
+			display: none;
+ }
+ 		label[for=" nuestroinput"] {
+ 			font-size: 14px;
+ 			font-weight: 600;
+ 			color: #fff;
+ 			background-color: #106BA0;
+ 			display: inline-block;
+ 			transition: all .5s;
+ 			cursor: pointer;
+ 			padding: 15px 40px !important;
+ 			text-transform: uppercase;
+ 			width: fit-content;
+ 			text-align: center;
+ }
+		</style>
 	<body>
 
 		<!-- Header -->
@@ -43,7 +67,8 @@
 								$consulta_Avatar = $consulta['avatar'];
 								echo 	"<a class='logo' href='perfil.php'>
 												<img src='./img/$consulta_Avatar' alt='logo' style='border-radius: 50%;'>
-											</a>";
+											</a>
+											<a data-toggle='modal' data-target='#myModal' style='color:#fff; cursor:pointer;'>Cambiar Foto</a>";
 							}else{
 								$_SESSION['cuenta_personal'] = null;
 								echo 	"<a class='logo' href='index.php'>
@@ -81,3 +106,30 @@
 				<!-- /Navigation -->
 			</div>
 		</header>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"> <label for="nuestroinput">Selecciona tu imagen <?php echo $consulta['usuario']; ?> </label></h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+				<form>
+        	<input type="file" id="nuestroinput" class="btn btn-secondary">
+					<button type="submit" name="cambiar" class="form-control btn btn-success">Subir</button>
+				</form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>

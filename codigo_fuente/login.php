@@ -60,6 +60,7 @@
                     ':contrasena' => password_hash($this->contra_reg, PASSWORD_DEFAULT),
                     ':avatar' => "avatar-".$avatar_img[$random_avatar].".jpg"
                 ));
+                mail($this->correo_reg, 'Notificacion', 'Hola, Le damos la bienvenida a Social Students');
             }
 
         }

@@ -5,7 +5,12 @@
 
 	if(isset($_POST['enviar'])){
 		require_once('codigo_fuente/contacto.php');
-		$datos = array($_POST['name'], $_POST['email'], $_POST['subject'], $_POST['message']);
+		$datos = array(
+			filter_var($_POST['name'], FILTER_SANITIZE_STRING),
+			filter_var($_POST['email'], FILTER_SANITIZE_STRING),
+			filter_var($_POST['subject'], FILTER_SANITIZE_STRING), 
+			filter_var($_POST['message'], FILTER_SANITIZE_STRING)
+		);
 
 		$objeto = new Contact();
 		$objeto::Guargar($datos, $conexion);
