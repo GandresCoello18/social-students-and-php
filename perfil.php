@@ -9,7 +9,7 @@
         <div class="hero-area section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/lenguaje.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./portada_post/lenguaje.jpg)"></div>
 			<!-- /Backgound Image -->
 
 			<div class="container">
