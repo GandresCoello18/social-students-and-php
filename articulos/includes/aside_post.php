@@ -29,7 +29,7 @@
 							<?php foreach(recientes($conexion) as $valor) : ?>
 							<div class="single-post">
 								<a class="single-post-img" href="<?php echo $valor['url']; ?>?user=<?php echo $valor['titulo']; ?>">
-									<img src="../img/<?php echo $valor['imagen']; ?>" alt="">
+									<img src="../portada_post/<?php echo $valor['imagen']; ?>" alt="">
 								</a>
 								<a href="<?php echo $valor['url'] ?>?user=<?php echo $valor['titulo']; ?>"><?php echo $valor['titulo']; ?>.</a>
 								<p><small>De : <?php echo $valor['usuario']; ?></small> - <small><?php echo $valor['fecha']; ?> .</small></p>

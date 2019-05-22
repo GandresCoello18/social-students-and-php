@@ -21,7 +21,7 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a class="logo" href="../index.php">
-							<img src="../img/<?php echo $consulta['avatar']; ?>" alt="logo" style="border-radius:50%;">
+							<img src="../img_perfil/<?php echo $consulta['avatar']; ?>" alt="logo" style="border-radius:50%;">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -58,7 +58,7 @@
 		<div class="hero-area section">
 
 <!-- Backgound Image -->
-<div class="bg-image bg-parallax overlay" style="background-image:url(../img/<?php echo $consulta['imagen']; ?>)"></div>
+<div class="bg-image bg-parallax overlay" style="background-image:url(../portada_post/<?php echo $consulta['imagen']; ?>)"></div>
 <!-- /Backgound Image -->
 
 <div class="container">

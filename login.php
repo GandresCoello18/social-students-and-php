@@ -98,10 +98,23 @@ input{
     </div>
 </section>
 
+<!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
-        <script type="text/javascript" src="js/login.js"></script>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+        <!-- Bootstrap -->
+        <link href="https://social-students.herokuapp.com/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://social-students.herokuapp.com/font/flaticon.css" rel="stylesheet"/>
+        <!-- Font Awesome Icon -->
+        <link href="https://social-students.herokuapp.com/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Custom stlylesheet -->
+        <link href="https://social-students.herokuapp.com/css/style.css" rel="stylesheet"/>
+        <link href="https://social-students.herokuapp.com/css/modificacion.css" rel="stylesheet"/>
+
+
+        <script src="js/login.js"></script>
+        <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
 </body>
 </html>
