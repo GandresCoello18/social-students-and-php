@@ -15,7 +15,7 @@ include_once('codigo_fuente/conexion.php');
          $pasaUsuario = $consulta[$i]['usuario'];
 
            echo "<div class='media-left'>
-                  <img src='./img/$pasaAvanta' alt=''>
+                  <img src='./img_perfil/$pasaAvanta' alt=''>
                  </div>
             <div class='media-body'>
                <h4 class='media-heading'>$pasaUsuario</h4>

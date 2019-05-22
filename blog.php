@@ -52,7 +52,7 @@
 								<div class="single-blog">
 									<div class="blog-img">
 										<a href="articulos/<?php echo $valor['url']; ?>?user=<?php echo $valor['titulo']; ?>">
-											<img src="./img/<?php echo $valor['imagen']; ?>" alt="">
+											<img src="./portada_post/<?php echo $valor['imagen']; ?>" alt="">
 										</a>
 									</div>
 									<h4><a href="articulos/<?php echo $valor['url']; ?>"><?php echo $valor['titulo']; ?></a></h4>

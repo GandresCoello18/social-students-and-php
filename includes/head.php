@@ -4,6 +4,23 @@
 			$cuenta_personal_2 = $_SESSION['cuenta_personal'];
 			require_once('codigo_fuente/head.php');
 		}
+		if(isset($_POST['cambiar'])){
+			$carpeta = 'img_perfil/';
+			$nombre_del_documento = $_FILES['cambiar_foto']['name'];
+			$tamano_del_documento = $_FILES['cambiar_foto']['size'];
+			$temporal = $_FILES['cambiar_foto']['tmp_name'];
+			if($tamano_del_documento != '0' || $tamano_del_documento != 0){
+			opendir($carpeta);
+      $destino = $carpeta.$nombre_del_documento;
+			copy($temporal,$destino);
+			}
+			$remplazar = $conexion->prepare("UPDATE cuentas_usuario SET avatar = :avatar WHERE id_usuario = :id_usuario ");
+			$remplazar->execute(array(
+				':avatar' => $nombre_del_documento,
+				':id_usuario' => $cuenta_personal_2
+			));
+			echo "<script>window.location.reload();</script>";
+		}
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,15 +47,6 @@
 		<link type="text/css" rel="stylesheet" href="css/modificacion.css"/>
     </head>
 		<style>
-		input[type=”file”]#nuestroinput {
- 			width: 0.1px;
- 			height: 0.1px;
- 			opacity: 0;
- 			overflow: hidden;
- 			position: absolute;
- 			z-index: -1;
-			display: none;
- }
  		label[for=" nuestroinput"] {
  			font-size: 14px;
  			font-weight: 600;
@@ -66,7 +74,7 @@
 							if(!empty($_SESSION['cuenta_personal'])){
 								$consulta_Avatar = $consulta['avatar'];
 								echo 	"<a class='logo' href='perfil.php'>
-												<img src='./img/$consulta_Avatar' alt='logo' style='border-radius: 50%;'>
+												<img src='./img_perfil/$consulta_Avatar' alt='logo' style='border-radius: 50%;'>
 											</a>
 											<a data-toggle='modal' data-target='#myModal' style='color:#fff; cursor:pointer;'>Cambiar Foto</a>";
 							}else{
@@ -119,8 +127,8 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-				<form>
-        	<input type="file" id="nuestroinput" class="btn btn-secondary">
+				<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
+        	<input type="file" name="cambiar_foto" id="nuestroinput" class="btn btn-secondary">
 					<button type="submit" name="cambiar" class="form-control btn btn-success">Subir</button>
 				</form>
       </div>
