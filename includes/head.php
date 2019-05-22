@@ -80,7 +80,7 @@
 							}else{
 								$_SESSION['cuenta_personal'] = null;
 								echo 	"<a class='logo' href='index.php'>
-												<img src='./img/logo-alt.png' alt='logo'>
+												<img src='./img/logo-alt.webp' alt='logo'>
 											</a>";
 							}
 						?>

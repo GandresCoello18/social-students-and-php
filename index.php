@@ -13,7 +13,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 		<div id="home" class="hero-area">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/home-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/home-background.webp)"></div>
 			<!-- /Backgound Image -->
 
 			<div class="home-wrapper">
@@ -80,7 +80,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 
 					<div class="col-md-6">
 						<div class="about-img">
-							<img src="./img/about.png" alt="">
+							<img src="./img/about.webp" alt="">
 						</div>
 					</div>
 
@@ -124,7 +124,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 		<div id="cta" class="section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta1-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta1-background.webp)"></div>
 			<!-- /Backgound Image -->
 
 			<!-- container -->
@@ -213,7 +213,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 
 					<div class="col-md-5 col-md-offset-1">
 						<a class="about-video" href="#">
-							<img src="./img/about-video.jpg" alt="">
+							<img src="./img/about-video.webp" alt="">
 							<i class="play-icon fa fa-play"></i>
 						</a>
 					</div>
@@ -231,7 +231,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 		<div id="contact-cta" class="section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.webp)"></div>
 			<!-- Backgound Image -->
 
 			<!-- container -->

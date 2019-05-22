@@ -28,7 +28,7 @@
 
 <style>
 body{
-    background-image: url('img/teclado.jpg');
+    background-image: url('img/teclado.webp');
     background-repeat: no-repeat;
     background-size: 100% 900px;
 }

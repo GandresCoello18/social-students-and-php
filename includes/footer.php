@@ -10,7 +10,7 @@
 					<div class="col-md-6">
 						<div class="footer-logo">
 							<a class="logo" href="index.html">
-								<img src="./img/logo.png" alt="logo">
+								<img src="./img/logo.webp" alt="logo">
 							</a>
 						</div>
 					</div>

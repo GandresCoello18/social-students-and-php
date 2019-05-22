@@ -6,7 +6,7 @@ require_once('codigo_fuente/sesion.php');
 <div class="hero-area section">
 
 <!-- Backgound Image -->
-<div class="bg-image bg-parallax overlay" style="background-image:url(./img/blog-post-background.jpg)"></div>
+<div class="bg-image bg-parallax overlay" style="background-image:url(./img/blog-post-background.webp)"></div>
 <!-- /Backgound Image -->
 
 <div class="container">
