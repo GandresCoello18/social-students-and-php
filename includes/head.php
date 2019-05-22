@@ -36,14 +36,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
 		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="print"/>
-		<link type="text/css" rel="stylesheet" href="font/flaticon.css" media="print"/>
+		<link href="https://social-students.herokuapp.com/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://social-students.herokuapp.com/font/flaticon.css" rel="stylesheet"/>
 		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="css/font-awesome.min.css" media="print">
+		<link href="https://social-students.herokuapp.com/css/font-awesome.min.css" rel="stylesheet">
 
 		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="css/style.css" media="print"/>
-		<link type="text/css" rel="stylesheet" href="css/modificacion.css" media="print"/>
+		<link href="https://social-students.herokuapp.com/css/style.css" rel="stylesheet"/>
+		<link href="https://social-students.herokuapp.com/css/modificacion.css" rel="stylesheet"/>
     </head>
 		<style>
  		label[for=" nuestroinput"] {
