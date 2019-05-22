@@ -10,7 +10,7 @@
 					<div class="col-md-6">
 						<div class="footer-logo">
 							<a class="logo" href="index.html">
-								<img src="../img/logo.png" alt="logo">
+								<img src="../img/logo.webp" alt="logo">
 							</a>
 						</div>
 					</div>
@@ -21,10 +21,11 @@
 						<ul class="footer-nav">
 							<li><a href="../index.php">Inicio</a></li>
 							<?php 
-							if($title === 'Andres coello goyes'){
-								echo "<li><a href='cerrar.php'>Cerar session</a></li>";
+							if(!empty($_SESSION['cuenta_personal'])){
+								echo "<li><a href='../cerrar.php'>Cerar session</a></li>";
 							}else{
-								echo "<li><a href='login.php'>Login</a></li>";
+								$_SESSION['cuenta_personal'] = null;
+								echo "<li><a href='../login.php'>Login</a></li>";
 							}
 						?>
 							<li><a href="../cursos.php">Cursos</a></li>
@@ -71,11 +72,23 @@
 		<div id='preloader'><div class='preloader'></div></div>
 		<!-- /preloader -->
 
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="../font/flaticon.css"/>
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/modificacion.css"/>
 
 		<!-- jQuery Plugins -->
-		<script type="text/javascript" src="../js/jquery.min.js"></script>
-		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="../js/main.js"></script>
+		<script async src="../js/jquery.min.js"></script>
+		<script async src="../js/bootstrap.min.js"></script>
+		<script async src="../js/main.js"></script>
 
 	</body>
 </html>

@@ -10,19 +10,6 @@
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 		<title><?php echo $title; ?></title>
-
-		<!-- Google font -->
-		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
-
-		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
-		<link type="text/css" rel="stylesheet" href="../font/flaticon.css"/>
-		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="../css/font-awesome.min.css">
-
-		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="../css/style.css"/>
-		<link type="text/css" rel="stylesheet" href="../css/modificacion.css"/>
     </head>
 	<body>
 

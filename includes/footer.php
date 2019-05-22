@@ -71,12 +71,23 @@
 		<!-- preloader -->
 		<div id='preloader'><div class='preloader'></div></div>
 		<!-- /preloader -->
+	<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
+		<!-- Bootstrap -->
+		<link href="https://social-students.herokuapp.com/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://social-students.herokuapp.com/font/flaticon.css" rel="stylesheet"/>
+		<!-- Font Awesome Icon -->
+		<link href="https://social-students.herokuapp.com/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Custom stlylesheet -->
+		<link href="https://social-students.herokuapp.com/css/style.css" rel="stylesheet"/>
+		<link href="https://social-students.herokuapp.com/css/modificacion.css" rel="stylesheet"/>
 
 		<!-- jQuery Plugins -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script async src="https://social-students.herokuapp.com/js/jquery.min.js"></script>
+		<script async src="https://social-students.herokuapp.com/js/bootstrap.min.js"></script>
+		<script async src="https://social-students.herokuapp.com/js/main.js"></script>
 
 	</body>
 </html>

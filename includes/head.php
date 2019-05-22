@@ -31,19 +31,6 @@
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 		<title><?php echo $title; ?></title>
-
-		<!-- Google font -->
-		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
-
-		<!-- Bootstrap -->
-		<link href="https://social-students.herokuapp.com/css/bootstrap.min.css" rel="stylesheet"/>
-		<link href="https://social-students.herokuapp.com/font/flaticon.css" rel="stylesheet"/>
-		<!-- Font Awesome Icon -->
-		<link href="https://social-students.herokuapp.com/css/font-awesome.min.css" rel="stylesheet">
-
-		<!-- Custom stlylesheet -->
-		<link href="https://social-students.herokuapp.com/css/style.css" rel="stylesheet"/>
-		<link href="https://social-students.herokuapp.com/css/modificacion.css" rel="stylesheet"/>
     </head>
 		<style>
  		label[for=" nuestroinput"] {
