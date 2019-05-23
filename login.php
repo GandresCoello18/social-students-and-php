@@ -71,9 +71,9 @@ input{
                 <?php if(!empty($error_vacio)) : ?>
                 <p style="color: red;"><?php echo $error_vacio; ?></p>
                 <?php endif; ?>
-                <input type="email" name="correo_log" class="form-control text-center" require="true" placeholder="Correo Electronico">
-                <input type="password" name="contra_log" class="form-control text-center" placeholder="Contraseña">
-                <input type="submit" name="accede_log" class="form-control btn acceder" value="Acceder" style="background-color: #FF6700; color: #fff; border-radius: 13px;">
+                <input type="email" name="correo_log" class="form-control text-center" require="true" placeholder="Correo Electronico" style="position: relative; top: 10px">
+                <input type="password" name="contra_log" class="form-control text-center" placeholder="Contraseña" style="position: relative; top: 10px">
+                <input type="submit" name="accede_log" class="form-control btn acceder" value="Acceder" style="background-color: #FF6700; color: #fff; border-radius: 13px; position: relative; top: 10px">
                 <p id="crear" onclick="crear_cuenta()">Crear una cuenta S-S...!</p>
             </form>
 
@@ -82,10 +82,10 @@ input{
                 <?php if(!empty($error_vacio)) : ?>
                 <p style="color: red;"><?php echo $error_vacio; ?></p>
                 <?php endif; ?>
-                <input type="email" name="correo_reg" class="form-control text-center" require="true" placeholder="Correo Electronico">
-                <input type="text" name="usuario_reg" class="form-control text-center" placeholder="Nombre de Usuario">
-                <input type="password" name="contra_reg" class="form-control text-center" placeholder="Contraseña Minimo 7 caracter">
-                <input type="password" name="contra_2_reg" class="form-control text-center" placeholder="Confirma Contraseña">
+                <input type="email" name="correo_reg" class="form-control text-center" require="true" placeholder="Correo Electronico" style="position: relative; top: 10px">
+                <input type="text" name="usuario_reg" class="form-control text-center" placeholder="Nombre de Usuario" style="position: relative; top: 10px">
+                <input type="password" name="contra_reg" class="form-control text-center" placeholder="Contraseña Minimo 7 caracter" style="position: relative; top: 10px">
+                <input type="password" name="contra_2_reg" class="form-control text-center" placeholder="Confirma Contraseña" style="position: relative; top: 10px">
                 <select class="form-control text-center" name="sexo" style="position: relative; top: 10px;">
                     <option value="genero">Genero</option>
                     <option value="masculino">Masculino</option>

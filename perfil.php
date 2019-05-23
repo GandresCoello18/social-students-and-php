@@ -9,15 +9,15 @@
         <div class="hero-area section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./portada_post/lenguaje.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./portada_post/lenguaje.webp)"></div>
 			<!-- /Backgound Image -->
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 text-center">
 						<ul class="hero-area-tree">
-							<li><a href="index.php">Inicio</a></li>
-							<li><a href="perfil.php">Perfil</a></li>
+							<li><a href="index">Inicio</a></li>
+							<li><a href="perfil">Perfil</a></li>
 							<li>Compartir es el objetivo</li>
 						</ul>
 						<h1 class="white-text"><?php echo $abstraer_info[0]['usuario']; ?></h1>

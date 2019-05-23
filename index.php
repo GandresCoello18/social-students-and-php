@@ -22,7 +22,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 						<div class="col-md-8">
 							<h1 class="white-text">Social Students</h1>
 							<p class="lead white-text">Compartir tus conocimientos con otros estudiantes es crecer profecionalmente y tu tambien puedes hacerlo.</p>
-							<a class="main-button icon-button" href="login.php">Empezar ahora</a>
+							<a class="main-button icon-button" href="login">Empezar ahora</a>
 						</div>
 					</div>
 				</div>
@@ -110,7 +110,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 				<!-- courses -->
 				<div class="row">
 					<div class="center-btn">
-						<a class="main-button icon-button" href="cursos.php">Mas Cursos</a>
+						<a class="main-button icon-button" href="cursos">Mas Cursos</a>
 					</div>
 				</div>
 
@@ -136,7 +136,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 					<div class="col-md-6">
 						<h2 class="white-text">Aprende en cualquier momento de tu dia</h2>
 						<p class="lead white-text">Conoce el contenido que ofrece las instituciones tecnologicas.</p>
-						<a class="main-button icon-button" href="cursos.php">Saber mas</a>
+						<a class="main-button icon-button" href="cursos">Saber mas</a>
 					</div>
 
 				</div>
@@ -243,7 +243,7 @@ $resul = $objeto::abstraer_cursos($num_curso, $conexion);
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<h2 class="white-text">Contacto</h2>
 						<p class="lead white-text">¿Tienes dudas? envia un mensaje para aclarar cualquier inquietud.</p>
-						<a class="main-button icon-button" href="contact.php">Enviar mensaje</a>
+						<a class="main-button icon-button" href="contact">Enviar mensaje</a>
 					</div>
 
 				</div>

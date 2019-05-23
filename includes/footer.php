@@ -9,7 +9,7 @@
 					<!-- footer logo -->
 					<div class="col-md-6">
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
+							<a class="logo" href="index">
 								<img src="./img/logo.webp" alt="logo">
 							</a>
 						</div>
@@ -19,18 +19,18 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-							<li><a href="index.php">Inicio</a></li>
+							<li><a href="index">Inicio</a></li>
 							<?php 
 							if(!empty($_SESSION['cuenta_personal'])){
 								echo "<li><a href='cerrar.php'>Cerar session</a></li>";
 							}else{
 								$_SESSION['cuenta_personal'] = null;
-								echo "<li><a href='login.php'>Login</a></li>";
+								echo "<li><a href='login'>Login</a></li>";
 							}
 						?>
-							<li><a href="cursos.php">Cursos</a></li>
-							<li><a href="blog.php">Blog</a></li>
-							<li><a href="contact.php">Contacto</a></li>
+							<li><a href="cursos">Cursos</a></li>
+							<li><a href="blog">Blog</a></li>
+							<li><a href="contact">Contacto</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->

@@ -6,6 +6,6 @@ $consulta_item_cursos->execute(array(
 ));
 $consulta_item_cursos = $consulta_item_cursos->fetchall();
 
-if(!$_GET['tema']) header('location: cursos.php');
+if(!$_GET['tema']) header('location: cursos');
 
 ?>

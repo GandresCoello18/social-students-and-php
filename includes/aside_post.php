@@ -43,12 +43,12 @@
 						<!-- tags widget -->
 						<div class="widget tags-widget">
 							<h3>Tags</h3>
-							<a class="tag" href="perfil-serie-cursos.php?tema=4">C++</a>
-							<a class="tag" href="perfil-serie-cursos.php?tema=1">Java</a>
-							<a class="tag" href="perfil-serie-cursos.php?tema=8">PHP</a>
-							<a class="tag" href="perfil-serie-cursos.php?tema=7">SQL</a>
-							<a class="tag" href="#">JavaScript</a>
-							<a class="tag" href="perfil-serie-cursos.php?tema=2">Html</a>
+							<a class="tag" href="perfil-serie-cursos?tema=4">C++</a>
+							<a class="tag" href="perfil-serie-cursos?tema=1">Java</a>
+							<a class="tag" href="perfil-serie-cursos?tema=8">PHP</a>
+							<a class="tag" href="perfil-serie-cursos?tema=7">SQL</a>
+							<a class="tag" href="perfil-serie-cursos?tema=9">JavaScript</a>
+							<a class="tag" href="perfil-serie-cursos?tema=2">Html</a>
 							<a class="tag" href="#">Git</a>
 							<a class="tag" href="#">Pruebas</a>
 						</div>

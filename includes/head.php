@@ -59,13 +59,13 @@
 						<?php 
 							if(!empty($_SESSION['cuenta_personal'])){
 								$consulta_Avatar = $consulta['avatar'];
-								echo 	"<a class='logo' href='perfil.php'>
+								echo 	"<a class='logo' href='perfil'>
 												<img src='./img_perfil/$consulta_Avatar' alt='logo' style='border-radius: 50%;'>
 											</a>
 											<a data-toggle='modal' data-target='#myModal' style='color:#fff; cursor:pointer;'>Cambiar Foto</a>";
 							}else{
 								$_SESSION['cuenta_personal'] = null;
-								echo 	"<a class='logo' href='index.php'>
+								echo 	"<a class='logo' href='index'>
 												<img src='./img/logo-alt.webp' alt='logo'>
 											</a>"; 
 							}
@@ -89,12 +89,12 @@
 								echo "<li><a href='cerrar.php' id='nav-login'>Cerar session</a></li>";
 							}else{
 								$_SESSION['cuenta_personal'] = null;
-								echo "<li><a href='login.php' id='nav-login'>Login</a></li>";
+								echo "<li><a href='login' id='nav-login'>Login</a></li>";
 							}
 						?>
-						<li><a href="cursos.php" id="nav-cursos">Cursos</a></li>
-						<li><a href="blog.php" id="nav-blog">Blog</a></li>
-						<li><a href="contact.php" id="nav-contact">Contact</a></li>
+						<li><a href="cursos" id="nav-cursos">Cursos</a></li>
+						<li><a href="blog" id="nav-blog">Blog</a></li>
+						<li><a href="contact" id="nav-contact">Contact</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->

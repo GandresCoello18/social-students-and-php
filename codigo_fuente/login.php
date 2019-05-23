@@ -15,10 +15,10 @@
                 ));
                 $consulta = $consulta->fetchall();
                  if(password_verify($this->contra_log, $consulta[0]['contrasena']) == 0){
-                    header('location: login.php');
+                    header('location: login');
                  }else if(password_verify($this->contra_log, $consulta[0]['contrasena']) > 0){
                     $_SESSION['cuenta_personal'] = $consulta[0][0];
-                    header('location: perfil.php');
+                    header('location: perfil');
                  }else{
                     return "Datos incorrectos, vuelva a intentarlo";
                 }
@@ -60,7 +60,10 @@
                     ':contrasena' => password_hash($this->contra_reg, PASSWORD_DEFAULT),
                     ':avatar' => "avatar-".$avatar_img[$random_avatar].".webp"
                 ));
-                mail("goyeselcoca@gmail.com", 'Notificacion', 'Hola, Le damos la bienvenida a Social Students');
+                $header = "From: goyeselcoca@gmail.com" . "\r\n";
+                $header .= "Reply-To: goyeselcoca@gmail.com" . "\r\n";
+                $header .= "X-Mailer: PHP/". phpversion();
+                mail("goyeselcoca@gmail.com", 'Notificacion', 'Hola, Le damos la bienvenida a Social Students', $header);
             }
 
         }

@@ -6,6 +6,6 @@
     $abstraer_info = $abstraer_info->fetchall();
 
     if(!$_SESSION['cuenta_personal']){
-        header('location: login.php');
+        header('location: login');
     }
 ?>
