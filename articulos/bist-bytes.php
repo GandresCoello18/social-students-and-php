@@ -91,11 +91,7 @@
 						<!-- /blog post -->
 
 						<!-- blog share -->
-						<div class="blog-share">
-							<h4>Compartir Post:</h4>
-							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-						</div>
+						<?php include_once('includes/redes_sociales.php'); ?>
 						<!-- /blog share -->
 
 						<!-- blog comments -->
