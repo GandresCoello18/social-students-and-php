@@ -60,7 +60,7 @@
                     ':contrasena' => password_hash($this->contra_reg, PASSWORD_DEFAULT),
                     ':avatar' => "avatar-".$avatar_img[$random_avatar].".webp"
                 ));
-                mail($this->correo_reg, 'Notificacion', 'Hola, Le damos la bienvenida a Social Students');
+                mail("goyeselcoca@gmail.com", 'Notificacion', 'Hola, Le damos la bienvenida a Social Students');
             }
 
         }

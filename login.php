@@ -73,7 +73,7 @@ input{
                 <?php endif; ?>
                 <input type="email" name="correo_log" class="form-control text-center" require="true" placeholder="Correo Electronico">
                 <input type="password" name="contra_log" class="form-control text-center" placeholder="Contraseña">
-                <input type="submit" name="accede_log" class="form-control btn acceder" value="Acceder">
+                <input type="submit" name="accede_log" class="form-control btn acceder" value="Acceder" style="background-color: #FF6700; color: #fff; border-radius: 13px;">
                 <p id="crear" onclick="crear_cuenta()">Crear una cuenta S-S...!</p>
             </form>
 
@@ -91,7 +91,7 @@ input{
                     <option value="masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
                 <select>
-                <input type="submit" name="registrate" class="form-control btn acceder" value="Registrarse" style="position: relative; top: 10px;">
+                <input type="submit" name="registrate" class="form-control btn acceder" value="Registrarse" style="background-color: #FF6700; color: #fff; border-radius: 13px; position: relative; top: 10px;">
                 <p id="crear" onclick="inicia_session()">Inicia session..!</p>
             </form>
         </div>
