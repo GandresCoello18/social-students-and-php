@@ -51,7 +51,7 @@
 							<div class="col-md-6">
 								<div class="single-blog">
 									<div class="blog-img">
-										<a href="articulos/<?php echo $valor['url']; ?>?user=<?php echo $valor['titulo']; ?>">
+										<a href="articulos/<?php echo $valor['url']; ?>?user=<?php echo $valor['titulo']; ?>&post=<?php echo $valor['id_post']; ?>">
 											<img src="./portada_post/<?php echo $valor['imagen']; ?>" alt="">
 										</a>
 									</div>

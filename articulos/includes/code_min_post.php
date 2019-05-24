@@ -9,4 +9,10 @@
 	$title = $consulta['titulo'];
 	require_once('includes/head_post.php');
 
+	if(empty($_GET['post'])){
+    	$post = null;
+	}else{
+    	$post=($_GET['post']);
+	}
+
 ?>
