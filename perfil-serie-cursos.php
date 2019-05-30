@@ -19,7 +19,7 @@ include_once('codigo_fuente/serie-cursos-DB.php'); ?>
         <div class="hero-area section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/lenguaje.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/lenguaje.webp)"></div>
 			<!-- /Backgound Image -->
 
 			<div class="container">

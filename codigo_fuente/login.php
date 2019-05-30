@@ -53,11 +53,6 @@
             }else if(count($verificar_DB) > 0){
                 return "El correo ".$this->correo_reg." ya forma parte de social students, utilice  otro";
             }else{
-                $header = "From: goyeselcoca@gmail.com" . "\r\n";
-                $header .= "Reply-To: goyeselcoca@gmail.com" . "\r\n";
-                $header .= "X-Mailer: PHP/". phpversion();
-                mail("goyeselcoca@gmail.com", 'Notificacion', 'Hola, Le damos la bienvenida a Social Students', $header);
-            
                 $insertar = $conexion->prepare("INSERT INTO cuentas_usuario (usuario, correo, contrasena, avatar) VALUES (:usuario, :correo, :contrasena, :avatar )");
                 $insertar->execute(array(
                     ':usuario' => strtoupper($this->usuario_reg),
@@ -65,8 +60,8 @@
                     ':contrasena' => password_hash($this->contra_reg, PASSWORD_DEFAULT),
                     ':avatar' => "avatar-".$avatar_img[$random_avatar].".webp"
                 ));
+                include_once('EmailPHP/enviar_email.php');
                 }
-
         }
 
         function verificar($conexion,$email){
