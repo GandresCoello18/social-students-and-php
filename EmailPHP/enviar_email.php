@@ -13,7 +13,7 @@ try {
     //Server settings
     $mail->SMTPDebug = 0;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'smtp1.gmail.com';  // Specify main and backup SMTP servers
+    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'goyeselcoca@gmail.com';                     // SMTP username
     $mail->Password   = 'realg4life10';                               // SMTP password
@@ -22,7 +22,7 @@ try {
 
     //Recipients
     $mail->setFrom('goyeselcoca@gmail.com', 'Andres Coello');
-    $mail->addAddress('goyeselcoca@gmail.com', 'probando');     // Add a recipient
+    $mail->addAddress('goyeselcoca@gmail.com');     // Add a recipient
 
     // Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
