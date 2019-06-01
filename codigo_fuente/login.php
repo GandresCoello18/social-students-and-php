@@ -60,6 +60,8 @@
                     ':contrasena' => password_hash($this->contra_reg, PASSWORD_DEFAULT),
                     ':avatar' => "avatar-".$avatar_img[$random_avatar].".webp"
                 ));
+                $nombre = $this->usuario_reg;
+                $correo = $this->correo_reg;
                 include_once('EmailPHP/enviar_email.php');
                 }
         }

@@ -22,7 +22,7 @@ try {
 
     //Recipients
     $mail->setFrom('goyeselcoca@gmail.com', 'Andres Coello');
-    $mail->addAddress('goyeselcoca@gmail.com');     // Add a recipient
+    $mail->addAddress($correo);     // Add a recipient
 
     // Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
@@ -93,7 +93,7 @@ try {
             <td style="border-bottom: 1px #E3AA5A solid; text-align: center; padding: 8px;">Nos alegra que formes parte de <strong>Social Students</strong></td>
         </tr>
         <tr>
-            <td style="background-color: #E3AA5A; padding: 10px; border-bottom: 1px #E3AA5A solid;">Hola, <?php echo $this->usuario_reg; ?>  Para empezar te recomendamos estos cursos</td>
+            <td style="background-color: #E3AA5A; padding: 10px; border-bottom: 1px #E3AA5A solid;">Hola, <?php echo $nombre; ?>  Para empezar te recomendamos estos cursos</td>
         </tr>
         <tr>
             <td>
