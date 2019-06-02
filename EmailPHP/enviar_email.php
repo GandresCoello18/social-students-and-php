@@ -65,7 +65,7 @@ try {
             <td style="border-bottom: 1px #E3AA5A solid; text-align: center; padding: 8px;">Nos alegra que formes parte de <strong>Social Students</strong></td>
         </tr>
         <tr>
-            <td style="background-color: #E3AA5A; padding: 10px; border-bottom: 1px #E3AA5A solid;">Hola, echo $nombre; Para empezar te recomendamos estos cursos</td>
+            <td style="background-color: #E3AA5A; padding: 10px; border-bottom: 1px #E3AA5A solid;">Hola, Para empezar te recomendamos estos cursos</td>
         </tr>
         <tr>
             <td>

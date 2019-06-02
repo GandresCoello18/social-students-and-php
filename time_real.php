@@ -20,7 +20,16 @@ include_once('codigo_fuente/conexion.php');
             <div class='media-body'>
                <h4 class='media-heading'>$pasaUsuario</h4>
                <p>$pasaText</p>
-               <div class='date-reply'><span>$pasaFecha</span><a href='#' class='reply'>Responder</a></div>
+               <div class='date-reply'><span>$pasaFecha</span><a href='#' class='reply'>Responder</a> <a href='#' class='reply'>Eliminar</a> <a href='#' class='reply'>Escuchar</a> </div>
             </div><br/>";    
       }
 ?>
+
+
+<script type="text/javascript">
+	if(document.querySelector(".media-left") == null){
+      document.querySelector(".alert-info").style.display = "block";
+   }else{
+      document.querySelector(".alert-info").style.display = "none";
+   }
+</script>

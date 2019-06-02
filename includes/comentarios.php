@@ -24,7 +24,7 @@
 		var dates = 'id_item_video='+id_text;
 		$.ajax({
 			type: "POST",
-			url: "time_real.php?",
+			url: "time_real.php",
 			data: dates,
 			success:function(res){
 				$("#inyect").html(res);
@@ -40,7 +40,8 @@
 							<div class="media">
 								<div id="inyect">
 								
-								</div>	
+								</div>
+								<div class="alert alert-info">Por el momento no existen comentario, se el primero el escribien algo que te llamo la atencion de la clase.</div>	
 							</div>
 							<!-- blog reply form -->
 							<div class="blog-reply-form col-6">

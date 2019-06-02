@@ -85,6 +85,7 @@
 		<link href="https://social-students.herokuapp.com/css/modificacion.css" rel="stylesheet"/>
 
 		<!-- jQuery Plugins -->
+		<script src="js/control_voz.js"></script>
 		<script src="https://social-students.herokuapp.com/js/jquery.min.js"></script>
 		<script src="https://social-students.herokuapp.com/js/bootstrap.min.js"></script>
 		<script src="https://social-students.herokuapp.com/js/main.js"></script>

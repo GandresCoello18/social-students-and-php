@@ -1,5 +1,5 @@
 <?php //require_once('codigo_fuente/comentario.php'); ?>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
 		<script type="text/javascript">
 	function btn_guardar(){
 		var comentario = document.getElementById('comentario').value;
@@ -24,7 +24,7 @@
 		var dates = 'id_item_video='+id_text;
 		$.ajax({
 			type: "POST",
-			url: "time_real_post.php?",
+			url: "time_real_post.php",
 			data: dates,
 			success:function(res){
 				$("#inyect_post").html(res);
@@ -39,8 +39,9 @@
 							<!-- single comment -->
 							<div class="media">
 								<div id="inyect_post">
-								
-								</div>	
+									
+								</div>
+								<div class="alert alert-info">Por el momento no existen comentario, se el primero el escribien algo que te llamo la atencion de la clase.</div>	
 							</div>
 							<!-- blog reply form -->
 							<div class="blog-reply-form col-6">

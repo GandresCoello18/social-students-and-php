@@ -24,3 +24,12 @@ include_once('../codigo_fuente/conexion.php');
             </div><br/>";    
       }
 ?>
+
+
+<script type="text/javascript">
+	if(document.querySelector(".media-left") == null){
+      document.querySelector(".alert-info").style.display = "block";
+   }else{
+      document.querySelector(".alert-info").style.display = "none";
+   }
+</script>

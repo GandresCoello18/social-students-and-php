@@ -98,6 +98,16 @@
 					</ul>
 				</nav>
 				<!-- /Navigation -->
+				
+				<div class="row">
+					<div class="col-sm-12">
+							
+<div id="text_reconocido" style="width: 65%; padding: 5px; height: 30px; border-radius: 10px; position: fixed; right: 0px; background-color: #fff; box-shadow: 2px 2px #FF6700; top: 80px; z-index: 99;">
+							Pronuncia: Menu de comandos.....
+</div>
+
+					</div>
+				</div>
 			</div>
 		</header>
 

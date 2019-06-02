@@ -83,7 +83,7 @@
 				
 				</div>
 				<!-- /row -->
-				<iframe style="position: relative: top: 0px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.824103370356!2d-79.54756088554859!3d-1.8116127361825622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d28109a7a09e5%3A0xe03f6555fec9270f!2sInstituto+Tecnol%C3%B3gico+Superior+Babahoyo!5e0!3m2!1ses-419!2sec!4v1557443334755!5m2!1ses-419!2sec" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe style="position: relative: top: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.824103370356!2d-79.54756088554859!3d-1.8116127361825622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d28109a7a09e5%3A0xe03f6555fec9270f!2sInstituto+Tecnol%C3%B3gico+Superior+Babahoyo!5e0!3m2!1ses-419!2sec!4v1557443334755!5m2!1ses-419!2sec" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 			<!-- /container -->
 
