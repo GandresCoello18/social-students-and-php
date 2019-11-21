@@ -24,6 +24,14 @@
         $verificar_si_existe_db = $objeto->verificar($conexion,$correo_reg);
         $error_vacio = $objeto->guardar($conexion, $verificar_si_existe_db, $sexo);
     }
+
+    if(isset($_COOKIE['correo'])){
+        $galleta_correo = $_COOKIE['correo'];
+        $galleta_contrasena = $_COOKIE['contrasena'];
+    }else{
+        $galleta_correo = null;
+        $galleta_contrasena = null;
+    }
 ?>
 
 <style>
@@ -66,14 +74,14 @@ input{
 <section class="container-fluid">
     <div class="row">
         <div class="col-5">
-            <form id="login" action="login.php" method="post">
+            <form id="login" action="login" method="post">
                 <h3 class="text-center">Social Students</h3>
                 <?php if(!empty($error_vacio)) : ?>
                 <p style="color: red;"><?php echo $error_vacio; ?></p>
                 <?php endif; ?>
-                <input type="email" name="correo_log" class="form-control text-center" require="true" placeholder="Correo Electronico" style="position: relative; top: 10px">
-                <input type="password" name="contra_log" class="form-control text-center" placeholder="Contraseña" style="position: relative; top: 10px">
-                <input type="submit" name="accede_log" class="form-control btn acceder" value="Acceder" style="background-color: #FF6700; color: #fff; border-radius: 13px; position: relative; top: 10px">
+                <input type="email" name="correo_log" class="form-control text-center" require="" value="<?php echo $galleta_correo; ?>" placeholder="Correo Electronico" style="position: relative; top: 10px">
+                <input type="password" name="contra_log" class="form-control text-center" value="<?php echo $galleta_contrasena; ?>" placeholder="Contraseña" style="position: relative; top: 10px">
+                <input type="submit" id="ejecu" name="accede_log" class="form-control btn acceder" value="Acceder" style="background-color: #FF6700; color: #fff; border-radius: 13px; position: relative; top: 10px">
                 <p id="crear" onclick="crear_cuenta()">Crear una cuenta S-S...!</p>
             </form>
 
@@ -111,8 +119,8 @@ input{
         <link href="https://social-students.herokuapp.com/css/style.css" rel="stylesheet"/>
         <link href="https://social-students.herokuapp.com/css/modificacion.css" rel="stylesheet"/>
 
-
         <script src="js/login.js"></script>
+        <script src="js/control_voz.js"></script>
         <script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>

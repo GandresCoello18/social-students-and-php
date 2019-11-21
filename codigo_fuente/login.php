@@ -17,8 +17,13 @@
                  if(password_verify($this->contra_log, $consulta[0]['contrasena']) == 0){
                     header('location: login');
                  }else if(password_verify($this->contra_log, $consulta[0]['contrasena']) > 0){
+                    if(empty($_COOKIE['correo'])){
+                        setcookie("correo", $this->correo, time()+60*60*24*30, '/');
+                        setcookie("contrasena", $this->contra_log, time()+60*60*24*30, '/');
+                    }
                     $_SESSION['cuenta_personal'] = $consulta[0][0];
-                    header('location: perfil');
+                    //header('location: perfil');
+                    echo "<script type='text/javascript'>window.location.href = 'perfil';</script>";
                  }else{
                     return "Datos incorrectos, vuelva a intentarlo";
                 }

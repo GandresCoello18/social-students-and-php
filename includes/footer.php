@@ -86,9 +86,9 @@
 
 		<!-- jQuery Plugins -->
 		<script src="js/control_voz.js"></script>
-		<script src="https://social-students.herokuapp.com/js/jquery.min.js"></script>
-		<script src="https://social-students.herokuapp.com/js/bootstrap.min.js"></script>
-		<script src="https://social-students.herokuapp.com/js/main.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
 
 	</body>
 </html>

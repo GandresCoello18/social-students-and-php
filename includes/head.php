@@ -19,7 +19,7 @@
 				':avatar' => $nombre_del_documento,
 				':id_usuario' => $cuenta_personal_2
 			));
-			echo "<script>window.location.reload();</script>";
+			//echo "<script>window.location.reload();</script>";
 		}
  ?>
 <!DOCTYPE html>
@@ -29,7 +29,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+		 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		 <link rel="stylesheet" type="text/css" href="css/style.css">
+		 <link rel="stylesheet" type="text/css" href="css/modificacion.css">
+		 <link rel="stylesheet" type="text/css" href="css/login.css">
+		 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<title><?php echo $title; ?></title>
     </head>
 		<style>
@@ -45,6 +49,9 @@
  			text-transform: uppercase;
  			width: fit-content;
  			text-align: center;
+ }
+ #menu_comandos{
+	 display: none;
  }
 		</style>
 	<body>
@@ -83,7 +90,7 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.php" id="nav-inicio">Inicio</a></li>
+						<li><a href="index" id="nav-inicio">Inicio</a></li>
 						<?php 
 							if(!empty($_SESSION['cuenta_personal'])){
 								echo "<li><a href='cerrar.php' id='nav-login'>Cerar session</a></li>";
@@ -103,8 +110,22 @@
 					<div class="col-sm-12">
 							
 <div id="text_reconocido" style="width: 65%; padding: 5px; height: 30px; border-radius: 10px; position: fixed; right: 0px; background-color: #fff; box-shadow: 2px 2px #FF6700; top: 80px; z-index: 99;">
-							Pronuncia: Menu de comandos.....
+Pronuncia: Menu de comandos.....
 </div>
+<article id='menu_comandos' style="overflow-y: scroll; padding: 5px; width: 250px; height: 350px; background-color: #fff; position: fixed; right: 0px; top: 110px; border: 1px solid #FF6700; border-radius: 5px;">
+							<h6 class="text-center">Menu Comandos</h6>
+							<ul>
+								<li><h6>Scroll menu - Desliza el menu de comandos</h6></li>
+								<li><h6>Deslizar pantalla arriba / abajo - Mueve el Scroll de pantalla</h6></li>
+								<li><h6>Abrir pestaña /nombre de la pagina - Abre dicha pagina</li>
+								<li><h6>Iniciar session - inicia tu perfil</h6></li>
+								<li><h6>Cerrar session - cierra la session de tu perfil</h6></li>
+								<li><h6>Todos los cursos - Muestra la serie de cursos disponibles</h6></li>
+								<li><h6>Post recientes - Muestra los ultimos articulos</h6></li>
+								<li><h6>Siguiente clase - Mustra el video siguiente de la serie</h6></li>
+								<li><h6>Cerrar menu de comandos - oculta el area de los comandos</h6></li>
+							</ul>
+</article>
 
 					</div>
 				</div>
@@ -117,13 +138,14 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title"> <label for="nuestroinput">Selecciona tu imagen <?php echo $consulta['usuario']; ?> </label></h4>
+        <h4 class="modal-title"> <label for="nuestroinput">Selecciona tu imagen <?php //echo $consulta['usuario']; ?> </label></h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-				<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
+			<p>Por el momento no podemos mover tu imagen al destino establecido, si cambias tu foto de perfil solo vivira en el cache de tu navegador mas no en nuestra base de datos.</p>
+				<form action="<?php //echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
         	<input type="file" name="cambiar_foto" id="nuestroinput" class="btn btn-secondary">
 					<button type="submit" name="cambiar" class="form-control btn btn-success">Subir</button>
 				</form>
